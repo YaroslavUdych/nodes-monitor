@@ -14,3 +14,8 @@ export function randomFloat(min: number, max: number, decimals = 1): number {
 export function pickOne<T>(arr: readonly T[]): T {
 	return arr[Math.floor(Math.random() * arr.length)]
 }
+
+// Clamp a number between min and max
+export function clamp(val: number, min: number, max: number): number {
+	return Math.min(max, Math.max(min, val))
+}
